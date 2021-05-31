@@ -1,0 +1,28 @@
+<div clas="container mt-5">
+
+    <div *ngIf="images" class="row animate__animated animate__bounce animate__fadeIn">
+
+        <div class="col-md-3">
+            <a class="btn btn-danger" routerLink="/">Back</a>
+        </div>
+
+        <table>
+            <tr class="col-md-9" *ngFor="let i of images">
+                <td class="text-end">
+                    <p class="text-end me-3">{{i.identifier}} v{{i.version}}</p>
+                    <!-- p><strong>Caption:</strong>{{i.caption}}</p -->
+                    <p class="text-end me-3">{{i.centroid_coordinates.lat}} - {{i.centroid_coordinates.lon}}</p>
+                    <!-- p><strong>Url:</strong>{{i.url}}</p -->
+                </td>
+                <td>
+                    <img style="width: 200px; height: 200px;" class="rounded" src="{{i.url}}" alt="{{i.caption}}">
+                </td>
+            </tr>
+        </table>
+
+        <div class="col-md-3">
+            <a class="btn btn-danger" routerLink="/">Back</a>
+        </div>
+
+    </div>
+</div>

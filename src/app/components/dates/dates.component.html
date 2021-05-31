@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Dates</h1>
+    <ul class="list-group">
+        <a *ngFor="let d of dates" [routerLink]="['/images',d.date]"
+            class="list-group-item list-group-item-action animate_animated animate_bounce animate_fadeIn">
+            {{d.date}}
+        </a>
+    </ul>
+</div>
