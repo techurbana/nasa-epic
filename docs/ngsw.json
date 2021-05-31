@@ -1,0 +1,100 @@
+{
+  "configVersion": 1,
+  "timestamp": 1622438419852,
+  "index": "/nasa-epic/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/nasa-epic/favicon.ico",
+        "/nasa-epic/index.html",
+        "/nasa-epic/main.a2416144f5e734b2d87e.js",
+        "/nasa-epic/manifest.webmanifest",
+        "/nasa-epic/polyfills.00096ed7d93ed26ee6df.js",
+        "/nasa-epic/runtime.7b63b9fd40098a2e8207.js",
+        "/nasa-epic/styles.3ff695c00d717f2d2a11.css"
+      ],
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.1\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/nasa-epic/assets/css/animate.css",
+        "/nasa-epic/assets/icons/icon-128x128.png",
+        "/nasa-epic/assets/icons/icon-144x144.png",
+        "/nasa-epic/assets/icons/icon-152x152.png",
+        "/nasa-epic/assets/icons/icon-192x192.png",
+        "/nasa-epic/assets/icons/icon-384x384.png",
+        "/nasa-epic/assets/icons/icon-512x512.png",
+        "/nasa-epic/assets/icons/icon-72x72.png",
+        "/nasa-epic/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "nasa-epic",
+      "patterns": [
+        "https:\\/\\/api\\.nasa\\.gov\\/EPIC\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 20,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/nasa-epic/assets/css/animate.css": "9a0b55737e4f369c690642b508a6dfc1727e8ddf",
+    "/nasa-epic/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/nasa-epic/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/nasa-epic/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/nasa-epic/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/nasa-epic/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/nasa-epic/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/nasa-epic/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/nasa-epic/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/nasa-epic/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/nasa-epic/index.html": "68d7209ccb81d4c732d4e5019364af83e016fa3c",
+    "/nasa-epic/main.a2416144f5e734b2d87e.js": "5ab443c2d3bf67393de4ab265d44517aec0310c0",
+    "/nasa-epic/manifest.webmanifest": "75d7267af1d1de7dc18283dd80f9684e21728d9f",
+    "/nasa-epic/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "/nasa-epic/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/nasa-epic/styles.3ff695c00d717f2d2a11.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
