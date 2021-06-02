@@ -17,7 +17,7 @@ export class ImagesService {
     return this.http.get<Date[]>('https://api.nasa.gov/EPIC/api/natural/all?api_key=' + this.apiKey);
   }
 
-  getImageById(date: string): Observable<Image[]> {
+  getImagesByDate(date: string): Observable<Image[]> {
     return this.http.get<Image[]>('https://api.nasa.gov/EPIC/api/natural/date/' + date + '?api_key=' + this.apiKey);
   }
 

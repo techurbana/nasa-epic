@@ -22,7 +22,7 @@ export class ImageComponent implements OnInit {
     const date = this.activatedRoute.snapshot.paramMap.get('date')
     console.log('Date --> ', date);
 
-    this.nasaepicService.getImageById(date).subscribe((images) => {
+    this.nasaepicService.getImagesByDate(date).subscribe((images) => {
       if (!images) {
         return this.router.navigateByUrl('/');
       }
